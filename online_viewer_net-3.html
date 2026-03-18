@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logística & Transporte | Novo Hamburgo RS</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root { --rs-red: #d90429; --rs-dark: #2b2d42; --rs-blue: #003566; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; color: #333; }
+        
+        /* Header Profissional */
+        .navbar { background: white; border-bottom: 4px solid var(--rs-blue); py: 15px; }
+        .navbar-brand { font-weight: 800; color: var(--rs-blue) !important; }
+
+        /* Hero com Identidade Gaúcha */
+        .hero { 
+            background: linear-gradient(rgba(0, 53, 102, 0.9), rgba(0, 53, 102, 0.7)), 
+                        url('https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&fit=crop&w=1600&q=80');
+            background-size: cover; background-position: center;
+            padding: 140px 0 100px; color: white;
+        }
+
+        /* Seção de Conteúdo */
+        .service-card { 
+            border: none; border-radius: 20px; padding: 35px; 
+            box-shadow: 0 15px 35px rgba(0,0,0,0.05); transition: 0.3s;
+            background: #fff; height: 100%; border-top: 5px solid var(--rs-blue);
+        }
+        .service-card:hover { transform: translateY(-10px); }
+        .icon-box { 
+            width: 60px; height: 60px; background: rgba(0, 53, 102, 0.1); 
+            color: var(--rs-blue); border-radius: 12px; 
+            display: flex; align-items: center; justify-content: center; font-size: 26px; margin-bottom: 20px;
+        }
+
+        /* Mapa e Layout de Contato */
+        .map-frame { border-radius: 25px; overflow: hidden; height: 450px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+        .form-box { background: #f8f9fa; border-radius: 25px; padding: 40px; border: 1px solid #eee; }
+
+        /* WhatsApp Flutuante */
+        .wa-float { 
+            position: fixed; bottom: 30px; right: 30px; background: #25d366; 
+            color: white; width: 60px; height: 60px; border-radius: 50%; 
+            display: flex; align-items: center; justify-content: center; 
+            font-size: 30px; z-index: 1000; box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="https://wa.me/551160751870" class="wa-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand fs-3" href="#">TRANS<span style="color: var(--rs-blue);">NH</span></a>
+            <div class="ms-auto d-flex align-items-center">
+                <span class="d-none d-md-block me-3 small fw-bold text-muted"><i class="fas fa-map-marker-alt text-danger"></i> NOVO HAMBURGO, RS</span>
+                <a class="btn btn-primary fw-bold rounded-pill px-4" style="background: var(--rs-blue); border:none;" href="#contato">CONTATO</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero text-center text-lg-start">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <h1 class="display-3 fw-bold mb-4">Apoio Logístico e <br><span style="color: #00d4ff;">Transporte Urbano.</span></h1>
+                    <p class="lead mb-5 opacity-75">Soluções auxiliares de transporte terrestre e serviços de táxi com pontualidade e segurança em toda a região de Novo Hamburgo.</p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="#contato" class="btn btn-light btn-lg px-5 py-3 rounded-pill fw-bold">Solicitar Serviço</a>
+                        <a href="#servicos" class="btn btn-outline-light btn-lg px-5 py-3 rounded-pill fw-bold">Nossas Atividades</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos" class="py-5 my-5">
+        <div class="container text-center">
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <div class="icon-box mx-auto"><i class="fas fa-truck-ramp-box"></i></div>
+                        <h4 class="fw-bold">Apoio Terrestre</h4>
+                        <p class="text-muted small">Atividades auxiliares para o transporte de cargas e suporte operacional rodoviário.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <div class="icon-box mx-auto"><i class="fas fa-taxi"></i></div>
+                        <h4 class="fw-bold">Serviço de Táxi</h4>
+                        <p class="text-muted small">Transporte de passageiros com agilidade e motoristas qualificados em Novo Hamburgo.</p>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-4">
+                    <div class="service-card">
+                        <div class="icon-box mx-auto"><i class="fas fa-shield-halved"></i></div>
+                        <h4 class="fw-bold">Gestão Logística</h4>
+                        <p class="text-muted small">Suporte documental e organizacional para fluxos de transporte terrestre nacional.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="py-5 bg-light">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-6">
+                    <h2 class="fw-bold mb-4">Nossa Localização</h2>
+                    <div class="map-frame">
+                        <iframe 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0" 
+                            loading="lazy" 
+                            allowfullscreen 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3467.436154378!2d-51.1275!3d-29.69!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9519430000000000%3A0x0!2zUnVhIFRyw6pzIGRlIE91dHVicm8sIDEzMTAsIE5vdm8gSGFtYnVyZ28sIFJT!5e0!3m2!1spt-BR!2sbr!4v1700000000000">
+                        </iframe>
+                    </div>
+                    <div class="mt-4 p-3 bg-white rounded-4 border">
+                        <p class="mb-1 fw-bold text-primary"><i class="fas fa-map-pin"></i> ENDEREÇO:</p>
+                        <p class="small text-muted mb-0">Rua Tres de Outubro, 1310 - Apt 33 | Patria Nova, Novo Hamburgo - RS</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="form-box shadow-sm">
+                        <h2 class="fw-bold mb-4">Envie uma Mensagem</h2>
+                        <form action="#">
+                            <div class="mb-3">
+                                <label class="form-label small fw-bold">NOME</label>
+                                <input type="text" class="form-control" placeholder="Seu nome completo" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label small fw-bold">E-MAIL</label>
+                                <input type="email" class="form-control" placeholder="contato@empresa.com" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label small fw-bold">TIPO DE SERVIÇO</label>
+                                <select class="form-select border-radius-12">
+                                    <option>Apoio Logístico Terrestre</option>
+                                    <option>Serviço de Táxi</option>
+                                    <option>Consultoria Logística</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100 py-3 fw-bold" style="background: var(--rs-blue); border:none;">SOLICITAR ATENDIMENTO</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-5">
+        <div class="container text-center text-md-start">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h4 class="fw-bold mb-3">TRANS<span class="text-info">NH</span></h4>
+                    <p class="small text-secondary">Excelência em transportes e apoio logístico no Rio Grande do Sul.</p>
+                </div>
+                <div class="col-md-4">
+                    <h6 class="fw-bold text-uppercase mb-3">Dados Fiscais</h6>
+                    <p class="small text-secondary mb-1">CNPJ: 64.479.284/0001-23</p>
+                    <p class="small text-secondary">CNAE Principal: 52.29-0-99</p>
+                </div>
+                <div class="col-md-4">
+                    <h6 class="fw-bold text-uppercase mb-3">Legal</h6>
+                    <ul class="list-unstyled small">
+                        <li><a href="#" class="text-secondary text-decoration-none" data-bs-toggle="modal" data-bs-target="#modalTermos">Termos de Uso</a></li>
+                        <li><a href="#" class="text-secondary text-decoration-none" data-bs-toggle="modal" data-bs-target="#modalPrivacidade">Privacidade</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-5 opacity-10">
+            <div class="text-center text-secondary small uppercase tracking-widest">
+                © 2026 Operação Novo Hamburgo - Brasil
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="modalPrivacidade" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body p-5">
+                    <h4 class="fw-bold mb-4">Privacidade</h4>
+                    <p class="small text-muted">Seus dados são coletados apenas para fins de contato comercial e atendimento de serviços de transporte, seguindo rigorosamente a LGPD.</p>
+                    <button type="button" class="btn btn-dark w-100" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
